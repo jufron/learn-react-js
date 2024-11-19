@@ -4,15 +4,6 @@
 
 
 
-.contact-item-delete {
-    padding: 8px;
-    font-size: 18px;
-    background-color: orangered;
-    color: white;
-    border: 0;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
 .contact-input {
     border: 1px dashed black;
