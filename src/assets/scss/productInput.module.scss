@@ -1,0 +1,19 @@
+.form {
+    padding: 20px 30px;
+
+    .btnSuccess {
+        margin-top: 20px;
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+
+    .btnSuccess:hover {
+        background-color: #45a049;
+    }
+}
+
