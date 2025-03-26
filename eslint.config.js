@@ -24,6 +24,10 @@ export default [
       'react-refresh': reactRefresh,
     },
     rules: {
+      indent: ['error', 2, { SwitchCase: 1 }],
+      'no-tabs': 'error',
+      'react/jsx-indent': ['error', 2],
+      'react/jsx-indent-props': ['error', 2],
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
