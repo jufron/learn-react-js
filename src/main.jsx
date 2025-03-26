@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Task from './components/Task';
 import TaskPages from './pages/Task';
 import NoteApp from './pages/NoteApp';
+import Main from './pages/Main';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <Contact /> */}
     {/* <TaskPages /> */}
-    <NoteApp />
+    {/* <NoteApp /> */}
+    <Main />
   </StrictMode>,
 );
