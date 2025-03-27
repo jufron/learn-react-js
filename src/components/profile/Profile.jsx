@@ -6,7 +6,7 @@ export default function Profile() {
 
   return (
     <>
-      <h1>Profile Address</h1>
+      <h1>Component turunan profil</h1>
       <p>hello {profile}</p>
     </>
   );

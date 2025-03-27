@@ -6,7 +6,7 @@ export default function ProfileAddress() {
 
   return (
     <>
-      <h1>Profile Address</h1>
+      <h1>komponent turunan Profile Address</h1>
       <p>alamat {profile}</p>
     </>
   )
