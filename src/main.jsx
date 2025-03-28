@@ -30,7 +30,7 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <Contact /> */}
     {/* <TaskPages /> */}
-    {/* <NoteApp /> */}
-    <Main />
+    <NoteApp />
+    {/* <Main /> */}
   </StrictMode>,
 );
