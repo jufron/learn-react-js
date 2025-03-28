@@ -14,7 +14,8 @@ import Contact from './pages/Contact';
 import Task from './components/Task';
 import TaskPages from './pages/Task';
 import NoteApp from './pages/NoteApp';
-import Main from './pages/Main';
+import MainTimer from './components/timer/Main';
+// import Main from './pages/Main';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,7 +31,10 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <Contact /> */}
     {/* <TaskPages /> */}
-    <NoteApp />
+    {/* <NoteApp /> */}
     {/* <Main /> */}
+
+    {/* <AlertButton text="klik saya" message="ini diklik berapa kali" /> */}
+    <MainTimer />
   </StrictMode>,
 );
