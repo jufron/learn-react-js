@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Kemeja Flanel Pria",
+    "price": 120000,
+    "description": "Kemeja flanel pria lengan panjang, bahan katun lembut, nyaman dipakai sehari-hari.",
+    "imageUrl": "https://example.com/kemeja-flanel.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sepatu Sneakers Wanita",
+    "price": 250000,
+    "description": "Sepatu sneakers wanita model terkini, sol karet anti slip, cocok untuk aktivitas kasual.",
+    "imageUrl": "https://example.com/sepatu-sneakers.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tas Ransel Laptop",
+    "price": 300000,
+    "description": "Tas ransel laptop dengan banyak kompartemen, bahan tahan air, desain ergonomis.",
+    "imageUrl": "https://example.com/tas-ransel-laptop.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Jam Tangan Digital",
+    "price": 180000,
+    "description": "Jam tangan digital sporty, tahan air, dilengkapi stopwatch dan alarm.",
+    "imageUrl": "https://example.com/jam-tangan-digital.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Celana Jeans Pria",
+    "price": 220000,
+    "description": "Celana jeans pria model slim fit, bahan denim berkualitas, nyaman digunakan.",
+    "imageUrl": "https://example.com/celana-jeans.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Kaos Polos Katun",
+    "price": 75000,
+    "description": "Kaos polos pria dan wanita, bahan katun combed 30s, adem dan nyaman.",
+    "imageUrl": "https://example.com/kaos-polos.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Topi Baseball Cap",
+    "price": 50000,
+    "description": "Topi baseball cap model casual, bahan twill, strap belakang bisa disesuaikan.",
+    "imageUrl": "https://example.com/topi-baseball.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Dompet Kulit Pria",
+    "price": 150000,
+    "description": "Dompet kulit pria model lipat, banyak slot kartu, elegan dan awet.",
+    "imageUrl": "https://example.com/dompet-kulit.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Sweater Hoodie",
+    "price": 190000,
+    "description": "Sweater hoodie dengan bahan fleece tebal, hangat dan nyaman untuk cuaca dingin.",
+    "imageUrl": "https://example.com/sweater-hoodie.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Kacamata Hitam",
+    "price": 100000,
+    "description": "Kacamata hitam dengan lensa UV protection, melindungi mata dari sinar matahari.",
+    "imageUrl": "https://example.com/kacamata-hitam.jpg"
+  }
+]
