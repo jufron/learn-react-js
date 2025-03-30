@@ -17,6 +17,7 @@ import NoteApp from './pages/NoteApp';
 import MainTimer from './components/timer/Main';
 import MainGuestBook from './components/GuestBook/Main';
 import MainProduct from './components/Product/Main';
+import MainOnline from './components/online/Main';
 // import Main from './pages/Main';
 
 createRoot(document.getElementById('root')).render(
@@ -33,12 +34,13 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <Contact /> */}
     {/* <TaskPages /> */}
-    <NoteApp />
+    {/* <NoteApp /> */}
     {/* <Main /> */}
 
     {/* <AlertButton text="klik saya" message="ini diklik berapa kali" /> */}
     {/* <MainTimer /> */}
     {/* <MainGuestBook /> */}
     {/* <MainProduct /> */}
+    <MainOnline />
   </StrictMode>,
 );
