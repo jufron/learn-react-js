@@ -6,37 +6,42 @@ const ProductList = () => {
   const [ load, setLoad ] = useState(false);
   const [ loadingAnimation, setLoadingAnimation ] = useState(false);
 
-  function loadProduct () {
+  function handleLoadProduct () {
     setLoad(true);
     setLoadingAnimation(true);
   }
 
-  function callApi() {
-    setTimeout(() => {
-      fetch('/product.json')
-        .then(response => response.json())
-        .then(data => setProducts(data))
-        .then(() => loaded.current = true)
-        .catch(() => error => console.log(error))
-        .finally( () => setLoadingAnimation(false))
-    }, 100);
+  function handleResetProduct () {
+    setProducts([]);
   }
-  
+
+  async function callApi() {
+    const response = await fetch('/product.json');
+    const result = await response.json();
+
+    setLoadingAnimation(false);
+    setProducts(result);
+  }
+
   useEffect(() => {
-    load && callApi();
+    callApi();
     return () => console.log('product list component unmoundted');
-  }, []);
+  }, [load]);
 
   return (
     <>
       <h1>Product list</h1>
       {loadingAnimation && <p>loading...</p>}
-      {!load ? (
-        <button onClick={loadProduct}>load product</button>
+      {!load || loadingAnimation ? (
+        <button onClick={handleLoadProduct}>load product</button>
       ) : (
         products.map((product) => (
           <Product key={product.id} product={product} />
         ))
+      )}
+
+      {products.length > 0 && (
+        <button onClick={handleResetProduct}>reset product</button>
       )}
     </>
   )
