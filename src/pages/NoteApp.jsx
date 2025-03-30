@@ -4,6 +4,7 @@ import NoteList from "../components/Note/NoteList";
 import Note from "../components/Note/Note";
 import { useImmer, useImmerReducer } from "use-immer";
 import { NotesContext, NoteDispatchContext } from "../components/Note/NoteContex";
+import NoteSearch from "../components/Note/NoteSearch";
 
 let id = 0;
 const initialNotes = [
@@ -34,13 +35,14 @@ function noteReducer (notes, action) {
 export default function NoteApp() {
   const [notes, dispatch] = useImmerReducer(noteReducer, initialNotes);
 
+
   return (
     <>
     <NotesContext.Provider value={notes}>
       <NoteDispatchContext.Provider value={dispatch}>
         <h1>Note App</h1>
-        <NoteList />
         <NoteForm />
+        <NoteList />
       </NoteDispatchContext.Provider>
     </NotesContext.Provider>
     </>

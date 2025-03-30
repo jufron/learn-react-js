@@ -33,12 +33,12 @@ createRoot(document.getElementById('root')).render(
     <Counter /> */}
     {/* <Contact /> */}
     {/* <TaskPages /> */}
-    {/* <NoteApp /> */}
+    <NoteApp />
     {/* <Main /> */}
 
     {/* <AlertButton text="klik saya" message="ini diklik berapa kali" /> */}
     {/* <MainTimer /> */}
     {/* <MainGuestBook /> */}
-    <MainProduct />
+    {/* <MainProduct /> */}
   </StrictMode>,
 );
