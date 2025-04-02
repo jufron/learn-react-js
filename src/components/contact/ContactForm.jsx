@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useImmer } from "use-immer";
 
 
 function DetailNote ({ name, email, kategory, text }) {
@@ -29,7 +30,7 @@ function Input ({ label, id, inputType = 'text', onChangeHandle, inputValue }) {
 }
 
 export default function ContactForm () {
-  const [ notes, setNote ] = useState({
+  const [ notes, setNote ] = useImmer({
     name: '',
     email: '',
     kategory: '',
@@ -39,19 +40,27 @@ export default function ContactForm () {
   });
 
   function handleChangeName (e) {
-    setNote({ ...notes, name: e.target.value });
+    setNote(notes => {
+      notes.name = e.target.value
+    });
   }
 
   function handleChangeEmail (e) {
-    setNote({ ...notes, email: e.target.value });
+    setNote(notes => {
+      notes.email = e.target.value
+    });
   }
 
   function handleChangeKategory (e) {
-    setNote({ ...notes, kategory: e.target.value });
+    setNote(notes => {
+      notes.kategory = e.target.value
+    });
   }
 
   function handleChangeText (e) {
-    setNote({ ...notes, text: e.target.value });
+    setNote(notes => {
+      notes.text = e.target.value
+    });
   }
 
   return (
