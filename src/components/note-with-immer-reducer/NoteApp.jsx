@@ -1,0 +1,68 @@
+import { useImmer } from "use-immer";
+import NoteForm from "./NoteForm";
+import NoteList from "./NoteList";
+import { useReducer } from "react";
+import { useImmerReducer } from "use-immer";
+
+function NoteReducer (draft, action) {
+  if(action.type === 'ADD NOTE') {
+    draft.push({id: id++, text: action.text, done: false});
+  } else if(action.type === 'CHANGE NOTE') {
+    const note = draft.find(note => note.id === action.id);
+    note.done = action.done;
+  } else if(action.type === 'DELETE NOTE') {
+    const index = draft.findIndex(note => note.id === action.id);
+    draft.splice(index, 1);
+  }
+}
+
+let id = 0;
+const initialNote = [
+  { id: id++, text: 'belajar react hook', done: false },
+  { id: id++, text: 'belajar react router', done: false },
+  { id: id++, text: 'belajar react testing', done: false },
+  { id: id++, text: 'belajar react typescript', done: false },
+  { id: id++, text: 'belajar react redux', done: true },
+];
+
+export default function NoteApp () {
+  const [ notes, dispatch ] = useImmerReducer(NoteReducer, initialNote);
+
+  // * send method to form handler
+  function handleAddNote (text) {
+    dispatch({
+      type: 'ADD NOTE',
+      text: text
+    });
+  }
+
+  // * change note method to from notelist component
+  function handleChangeNote (note) {
+    dispatch({
+      type: 'CHANGE NOTE',
+      id: note.id,
+      text: note.text,
+      done: note.done
+    });
+  }
+
+  // * delete note method to from notelist component
+  function handleDeleteNote (note) {
+    dispatch({
+      type: 'DELETE NOTE',
+      id: note.id
+    });
+  }
+
+  return (
+    <>
+      <h1>Note App</h1>
+      <NoteForm onAddNote={handleAddNote} />
+      <NoteList
+        notes={notes}
+        onChange={handleChangeNote}
+        onDelete={handleDeleteNote}
+      />
+    </>
+  );
+}
