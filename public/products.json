@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14 Pro",
+    "price": 999.00,
+    "description": "The iPhone 14 Pro features a stunning Super Retina XDR display, the A16 Bionic chip, and a Pro camera system.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-1inch-deeppurple?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1663703840229"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23 Ultra",
+    "price": 1199.99,
+    "description": "The Galaxy S23 Ultra boasts a large Dynamic AMOLED 2X display, the latest Snapdragon processor, and a versatile camera system.",
+    "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/us/2302/gallery/us-galaxy-s23-ultra-s918-407446-sm-s918uzgcxaa-535995730?$650_519_PNG$"
+  },
+  {
+    "id": 3,
+    "name": "Google Pixel 7 Pro",
+    "price": 899.00,
+    "description": "The Pixel 7 Pro offers a smooth experience with its Tensor G2 chip, a brilliant display, and Google's signature camera quality.",
+    "imageUrl": "https://m.media-amazon.com/images/I/51Z7i6HnLwL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 11",
+    "price": 699.00,
+    "description": "The OnePlus 11 delivers flagship performance with its Snapdragon 8 Gen 2 processor, fast charging, and a vibrant display.",
+    "imageUrl": "https://m.media-amazon.com/images/I/61RLx481QHL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Xiaomi 13 Pro",
+    "price": 799.00,
+    "description": "The Xiaomi 13 Pro features a cutting-edge camera system, a powerful processor, and a premium design.",
+    "imageUrl": "https://i01.appmifile.com/webfile/globalimg/products/pc/xiaomi-13-pro/gallery/xiaomi-13-pro-gallery01.jpg"
+  },
+  {
+    "id": 6,
+    "name": "iPhone 14",
+    "price": 799.00,
+    "description": "The iPhone 14 features a dual-camera system for capturing beautiful photos and videos, the A15 Bionic chip, and all-day battery life.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661957656568"
+  }
+]

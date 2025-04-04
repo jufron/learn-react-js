@@ -9,6 +9,7 @@ import ProfilePage from './pages/ProfilePage.jsx';
 import AlertButton2 from './components/button/AlertButton2.jsx';
 import Timer from './components/timer/Timer.jsx';
 import GuestBook from './components/guestBook/GuestBook.jsx';
+import ProductList from './components/product/ProductList.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
     {/* <ProfilePage /> */}
     {/* <AlertButton2 /> */}
     {/* <Timer /> */}
-    <GuestBook />
+    {/* <GuestBook /> */}
+    <ProductList />
   </StrictMode>,
 );
