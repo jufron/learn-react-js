@@ -10,17 +10,19 @@ import AlertButton2 from './components/button/AlertButton2.jsx';
 import Timer from './components/timer/Timer.jsx';
 import GuestBook from './components/guestBook/GuestBook.jsx';
 import ProductList from './components/product/ProductList.jsx';
+import Online from './components/online/Online.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <Index /> */}
     {/* <TaskPage /> */}
     {/* <CounterPage /> */}
-    <NotePages />
+    {/* <NotePages /> */}
     {/* <ProfilePage /> */}
     {/* <AlertButton2 /> */}
     {/* <Timer /> */}
     {/* <GuestBook /> */}
     {/* <ProductList /> */}
+    <Online />
   </StrictMode>,
 );
