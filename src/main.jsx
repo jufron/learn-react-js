@@ -16,11 +16,11 @@ createRoot(document.getElementById('root')).render(
     {/* <Index /> */}
     {/* <TaskPage /> */}
     {/* <CounterPage /> */}
-    {/* <NotePages /> */}
+    <NotePages />
     {/* <ProfilePage /> */}
     {/* <AlertButton2 /> */}
     {/* <Timer /> */}
     {/* <GuestBook /> */}
-    <ProductList />
+    {/* <ProductList /> */}
   </StrictMode>,
 );
