@@ -7,7 +7,8 @@ import DashboardLayout from "./layouts/Dashboard.layout";
 import IndexDashboard from './pages/dashboard/Dashboard';
 import DashboardProduct from "./pages/dashboard/product/Product.jsx";
 import DashboardProductShow from "./pages/dashboard/product/ProductShow.jsx";
-
+import NotFound from "./pages/errors/NotFound.jsx";
+import useAnalytics from "./hooks/useAnalytics.js";
 
 const initRoute = createBrowserRouter([
   {
@@ -37,23 +38,32 @@ function RouterData () {
 function RouterDeclarative () {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={<Index />} />
-        <Route path="about" element={<About />} />
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-
-        <Route path="dashboard" element={<DashboardLayout />}>
-          <Route index element={<IndexDashboard />} />
-
-          <Route path="product">
-            <Route index element={<DashboardProduct />} />
-            <Route path=":id" element={<DashboardProductShow />} />
-          </Route>
-        </Route>
-
-      </Routes>
+      <AppRoute />
     </BrowserRouter>
+  );
+}
+
+function AppRoute () {
+  useAnalytics();
+  
+  return (
+    <Routes>
+      <Route index element={<Index />} />
+      <Route path="about" element={<About />} />
+      <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
+
+      <Route path="dashboard" element={<DashboardLayout />}>
+        <Route index element={<IndexDashboard />} />
+
+        <Route path="product">
+          <Route index element={<DashboardProduct />} />
+          <Route path=":id" element={<DashboardProductShow />} />
+        </Route>
+      </Route>
+
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
