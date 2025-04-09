@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 export default function Login() {
   return (
     <>
-      <Navbar />
       <div className="h-screen bg-gray-100 flex flex-col">
         <div className="flex-grow flex items-center justify-center">
           <div className="bg-white p-8 rounded-lg shadow-md w-96">
@@ -35,7 +34,6 @@ export default function Login() {
           </div>
         </div>    
       </div>
-      <Footer />
     </>
   );
 }

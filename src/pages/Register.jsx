@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar";
 export default function Register() {
   return (
     <>
-      <Navbar />
       <div className="min-h-screen bg-gray-100">
         <div className="flex items-center justify-center mt-16">
           <div className="bg-white p-8 rounded-lg shadow-md w-96">
@@ -46,7 +45,6 @@ export default function Register() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
